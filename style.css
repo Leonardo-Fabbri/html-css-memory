@@ -1,3 +1,43 @@
-h1 {
-  color: red;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Nerko One', cursive;
+
+}
+ body {
+   background-color: rgb(173,216,230);
+ }
+ #container{
+   margin: 50px auto;
+   width: 70%;
+ }
+
+ h1 {
+   font-size: 80px;
+   text-align: center;
+   color: white;
+ }
+main{
+  margin-top: 40px;
+}
+.container-secondo {
+  margin: auto;
+  width: 50%;
+
+}
+.riga{
+  margin: auto;
+}
+.rettangolo {
+  width: calc(100% / 4 - 2px - 2px);
+  height: 150px;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin:auto;
+  background-image:url("./pattern.png");
+  background-size: cover;
+}
+.sinistra , .centro , .destro {
+  display: inline-block;
 }
