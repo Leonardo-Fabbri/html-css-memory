@@ -24,7 +24,6 @@
  .container-secondo {
    margin: auto;
    width: 50%;
-
  }
  .riga{
    margin: auto;
@@ -32,13 +31,14 @@
  }
  .rettangolo {
    width: calc(100% / 4 - 2px - 2px);
-   height: 200px;
+   height: 150px;
    border: 1px solid black;
    border-radius: 5px;
    margin:auto;
    background-image:url("./pattern.png");
    background-size: cover;
    display: inline-block;
+   position: relative;
  }
 
 
@@ -46,6 +46,14 @@
   background-image: url("./noun_Tram_3134750.png");
   background-size: cover;
   background-color: white;
+  position: relative;
+}
+p {
+  position: absolute;
+  font-size: 35px;
+  bottom: 1px;
+  left: 25px;
+  color: orange;
 }
 
 .didascalia-tre:hover {
@@ -82,5 +90,5 @@
 
 footer{
   text-align: center;
-  margin-top: 20px;
+  margin-top: 50px;
 }
