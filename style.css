@@ -5,91 +5,72 @@
   font-family: 'Nerko One', cursive;
 
 }
- body {
-   background-color: rgb(173,216,230);
- }
- #container{
-    margin: 50px auto;
-    width: 70%;
-  }
-
-  h1 {
-    font-size: 80px;
-    text-align: center;
-    color: white;
-  }
- main{
-   margin-top: 40px;
- }
- .container-secondo {
-   margin: auto;
-   width: 50%;
- }
- .riga{
-   margin: auto;
-   display: inline;
- }
- .rettangolo {
-   width: calc(100% / 4 - 2px - 2px);
-   height: 150px;
-   border: 1px solid black;
-   border-radius: 5px;
-   margin:auto;
-   background-image:url("./pattern.png");
-   background-size: cover;
-   display: inline-block;
-   position: relative;
- }
-
-
-.didascalia-uno:hover {
-  background-image: url("./noun_Tram_3134750.png");
-  background-size: cover;
-  background-color: white;
-  position: relative;
+body {
+  background-color: #add8e6;
 }
-
-p {
-  position: absolute;
-  font-size: 35px;
-  bottom: 1px;
-  left: 25px;
-  color: orange;
+#container {
+  width: 70%;
+  max-width: 900px;
+  margin: 0 auto;
 }
-
-.didascalia-tre:hover {
-  background-image: url("./noun_Tractor_3134797.png");
-  background-size: cover;
-  background-color: white;
-}
-
-.didascalia-sei:hover {
-  background-image: url("./noun_air_balloon_3134741.png");
-  background-size: cover;
-  background-color: white;
-}
-
-
-.didascalia-sette:hover {
-  background-image: url("./noun_Cruise_Ship_3134824.png");
-  background-size: cover;
-  background-color: white;
-}
-
-.didascalia-nove:hover {
-  background-image: url("./noun_Bicycle_3134821.png");
-  background-size: cover;
-  background-color: white;
-}
-
-.didascalia-dodici:hover {
-  background-image: url("./noun_Submarine_3134738.png");
-  background-size: cover;
-  background-color: white;
-}
-
-
-footer{
+header {
   text-align: center;
-  margin-top: 50px;
+  font-size: 2em;
+  color: white;
+  text-shadow: 1px 1px 1px black;
+}
+main {
+  margin: 20px;
+}
+.cards {
+  text-align: center;
+}
+.row {
+  margin-bottom: 10px;
+ 
+}
+.card_element {
+  display: inline-block;
+  width: 20%;
+  height: 170px;
+  background-image: url("./pattern.png");
+  background-repeat: repeat;
+  background-size: contain;
+  border: 1px solid black ;
+  border-radius: 10px;
+  position: relative;
+
+
+}
+.card_text {
+  display: none;
+}
+.card_element.active .card_text, .card_element:hover .card_text {
+  display: block;
+  color: orange;
+  position: absolute;
+  bottom: 5px;
+  left: 50%;
+  transform: translate(-50% , -50%);
+  font-size: 20px;
+}
+.card_element img {
+  width: 100%;
+  visibility: hidden;
+}
+.card_element.active img, .card_element:hover img  {
+  visibility: visible;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  background-color: white;
+  background-size: contain;
+}
+
+.card_element.active, .card_element:hover   {
+  background-image: none;
+}
+
+footer {
+  text-align: center;
 }
